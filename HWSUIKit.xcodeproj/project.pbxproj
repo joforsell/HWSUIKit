@@ -29,6 +29,7 @@
 		3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6DD03227BAFAD2006736CB /* DetailViewController.swift */; };
 		3E898A9A27C3C85B001F4494 /* FlagListerViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9927C3C85B001F4494 /* FlagListerViewControllerTableViewController.swift */; };
 		3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */; };
+		3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */; };
 		3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		3E6DD03227BAFAD2006736CB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3E898A9927C3C85B001F4494 /* FlagListerViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListerViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
+		3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBrowserViewController.swift; sourceTree = "<group>"; };
 		3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+StaticColors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				3E6DD00927BAEFF8006736CB /* AppDelegate.swift */,
 				3E6DD00B27BAEFF8006736CB /* SceneDelegate.swift */,
 				3E6AA90527BBE58800EF127E /* ProjectViewController.swift */,
+				3E898AA227C43B2C001F4494 /* Browser */,
 				3E898A9F27C3CFA7001F4494 /* Storm Viewer */,
 				3E898A9E27C3CF9A001F4494 /* Guess the Flag */,
 				3E898A9D27C3CF90001F4494 /* Flag Lister */,
@@ -164,6 +167,14 @@
 				3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */,
 			);
 			path = "Extensions and utilities";
+			sourceTree = "<group>";
+		};
+		3E898AA227C43B2C001F4494 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */,
+			);
+			path = Browser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */,
 				3E6AA90A27BBF2D900EF127E /* FlagGameViewController.swift in Sources */,
 				3E6AA90627BBE58800EF127E /* ProjectViewController.swift in Sources */,
 				3E6DD00E27BAEFF8006736CB /* StormViewerViewController.swift in Sources */,

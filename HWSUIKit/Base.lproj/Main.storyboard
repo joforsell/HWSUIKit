@@ -44,7 +44,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCd-x0-CDp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093" y="-616"/>
+            <point key="canvasLocation" x="1080" y="-977"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="3c5-fF-v7D">
@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-u8-7CB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783" y="-616"/>
+            <point key="canvasLocation" x="1770" y="-977"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mRS-UX-WOp">
@@ -116,7 +116,7 @@
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hwslogowithtext" translatesAutoresizingMaskIntoConstraints="NO" id="4UI-Rw-SO9">
-                                <rect key="frame" x="87" y="104" width="240" height="128"/>
+                                <rect key="frame" x="87" y="108" width="240" height="128"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4UI-Rw-SO9" secondAttribute="height" multiplier="15:8" id="KbR-KN-W0q"/>
@@ -130,9 +130,9 @@
                             <constraint firstItem="Rwo-nq-Vhu" firstAttribute="leading" secondItem="yus-Oh-SyO" secondAttribute="leading" id="GN0-gc-9KI"/>
                             <constraint firstItem="Rwo-nq-Vhu" firstAttribute="bottom" secondItem="yus-Oh-SyO" secondAttribute="bottom" id="KHa-at-RRK"/>
                             <constraint firstItem="yus-Oh-SyO" firstAttribute="trailing" secondItem="Rwo-nq-Vhu" secondAttribute="trailing" id="O4p-Zg-fOE"/>
-                            <constraint firstItem="Rwo-nq-Vhu" firstAttribute="top" secondItem="4UI-Rw-SO9" secondAttribute="bottom" constant="16" id="QBz-57-t6q"/>
                             <constraint firstItem="Rwo-nq-Vhu" firstAttribute="top" secondItem="yus-Oh-SyO" secondAttribute="top" constant="160" id="TSs-wF-Kun"/>
                             <constraint firstItem="4UI-Rw-SO9" firstAttribute="centerX" secondItem="zl6-A6-44q" secondAttribute="centerX" id="Y00-72-BLR"/>
+                            <constraint firstItem="4UI-Rw-SO9" firstAttribute="top" secondItem="yus-Oh-SyO" secondAttribute="top" constant="20" id="jq1-X1-By6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U6j-pP-Je7"/>
@@ -217,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9g-94-bNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093" y="60"/>
+            <point key="canvasLocation" x="1080" y="-301"/>
         </scene>
         <!--Flag Lister View Controller Table View Controller-->
         <scene sceneID="7e9-Ga-8ar">
@@ -245,7 +245,22 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6q-6l-gnJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093" y="731"/>
+            <point key="canvasLocation" x="1080" y="370"/>
+        </scene>
+        <!--Easy Browser View Controller-->
+        <scene sceneID="Tjf-s5-6M7">
+            <objects>
+                <viewController storyboardIdentifier="Easy Browser" id="Ds7-aB-aCx" customClass="EasyBrowserViewController" customModule="HWSUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aKU-EQ-vHM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KbQ-zs-H3Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxy-7Q-7HE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="1047"/>
         </scene>
         <!--Flag Detail View Controller-->
         <scene sceneID="UJE-gT-3Ks">
@@ -288,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zT5-lt-gqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782.608695652174" y="730.58035714285711"/>
+            <point key="canvasLocation" x="1770" y="370"/>
         </scene>
     </scenes>
     <resources>

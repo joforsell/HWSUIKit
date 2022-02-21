@@ -17,8 +17,12 @@ class ProjectViewController: UIViewController {
         projectTableView.dataSource = self
         projectTableView.backgroundColor = .clear
         setGradientBackground(colorTop: UIColor.backgroundOrange!, colorBottom: UIColor.backgroundRed!)
-        navigationController?.navigationBar.isHidden = true
+        navigationItem.largeTitleDisplayMode = .never
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
     }
 
 }
