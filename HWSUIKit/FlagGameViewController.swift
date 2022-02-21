@@ -25,6 +25,8 @@ class FlagGameViewController: UIViewController {
         
         setupButtons()
         askQuestion()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Score", style: .plain, target: self, action: #selector(showScore))
     }
     
     func askQuestion(action: UIAlertAction! = nil) {
@@ -107,4 +109,10 @@ class FlagGameViewController: UIViewController {
         button3.layer.masksToBounds = false
     }
     
+    @objc
+    func showScore() {
+        let ac = UIAlertController(title: "Your current score is:", message: "\(score)", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+    }
 }
