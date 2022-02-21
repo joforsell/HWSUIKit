@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FlagListerViewControllerTableViewController: UITableViewController {
+class FlagListViewControllerTableViewController: UITableViewController {
     var countries = [String]()
 
     override func viewDidLoad() {
@@ -15,7 +15,7 @@ class FlagListerViewControllerTableViewController: UITableViewController {
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
         
-        title = "Flag Lister"
+        title = "Flag List"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     

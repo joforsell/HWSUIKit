@@ -12,5 +12,5 @@ struct Project {
     let identifier: String
     let image: String
     
-    static let projects = [Project(identifier: "Storm Viewer", image: "cloud.bolt.rain.fill"), Project(identifier: "Guess the Flag", image: "flag.fill"), Project(identifier: "Flag Lister", image: "flag.square.fill"), Project(identifier: "Easy Browser", image: "safari.fill")]
+    static let projects = [Project(identifier: "Storm Viewer", image: "cloud.bolt.rain.fill"), Project(identifier: "Guess the Flag", image: "flag.fill"), Project(identifier: "Flag List", image: "flag.square.fill"), Project(identifier: "Easy Browser", image: "safari.fill")]
 }

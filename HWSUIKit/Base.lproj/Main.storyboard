@@ -219,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="1080" y="-301"/>
         </scene>
-        <!--Flag Lister View Controller Table View Controller-->
+        <!--Flag List View Controller Table View Controller-->
         <scene sceneID="7e9-Ga-8ar">
             <objects>
-                <tableViewController storyboardIdentifier="Flag Lister" id="hdo-AF-lem" customClass="FlagListerViewControllerTableViewController" customModule="HWSUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Flag List" id="hdo-AF-lem" customClass="FlagListViewControllerTableViewController" customModule="HWSUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="mlz-dg-LBz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

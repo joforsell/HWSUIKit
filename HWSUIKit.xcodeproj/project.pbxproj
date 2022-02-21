@@ -27,7 +27,7 @@
 		3E6DD03027BAF3AB006736CB /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6DD02627BAF3AB006736CB /* nssl0033.jpg */; };
 		3E6DD03127BAF3AB006736CB /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6DD02727BAF3AB006736CB /* nssl0034.jpg */; };
 		3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6DD03227BAFAD2006736CB /* DetailViewController.swift */; };
-		3E898A9A27C3C85B001F4494 /* FlagListerViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9927C3C85B001F4494 /* FlagListerViewControllerTableViewController.swift */; };
+		3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */; };
 		3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */; };
 		3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */; };
 		3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */; };
@@ -56,7 +56,7 @@
 		3E6DD02627BAF3AB006736CB /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
 		3E6DD02727BAF3AB006736CB /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		3E6DD03227BAFAD2006736CB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		3E898A9927C3C85B001F4494 /* FlagListerViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListerViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
 		3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBrowserViewController.swift; sourceTree = "<group>"; };
 		3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+StaticColors.swift"; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 				3E898AA227C43B2C001F4494 /* Browser */,
 				3E898A9F27C3CFA7001F4494 /* Storm Viewer */,
 				3E898A9E27C3CF9A001F4494 /* Guess the Flag */,
-				3E898A9D27C3CF90001F4494 /* Flag Lister */,
+				3E898A9D27C3CF90001F4494 /* Flag List */,
 				3E898AA027C3CFB2001F4494 /* Models */,
 				3E898AA127C3CFB9001F4494 /* Extensions and utilities */,
 				3E6DD00F27BAEFF8006736CB /* Main.storyboard */,
@@ -127,13 +127,13 @@
 			path = Content;
 			sourceTree = "<group>";
 		};
-		3E898A9D27C3CF90001F4494 /* Flag Lister */ = {
+		3E898A9D27C3CF90001F4494 /* Flag List */ = {
 			isa = PBXGroup;
 			children = (
-				3E898A9927C3C85B001F4494 /* FlagListerViewControllerTableViewController.swift */,
+				3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */,
 				3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */,
 			);
-			path = "Flag Lister";
+			path = "Flag List";
 			sourceTree = "<group>";
 		};
 		3E898A9E27C3CF9A001F4494 /* Guess the Flag */ = {
@@ -267,7 +267,7 @@
 				3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */,
 				3E6AA90827BBED5C00EF127E /* Project.swift in Sources */,
 				3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */,
-				3E898A9A27C3C85B001F4494 /* FlagListerViewControllerTableViewController.swift in Sources */,
+				3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */,
 				3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
