@@ -35,7 +35,7 @@ extension ProjectViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Project", for: indexPath)
         cell.textLabel?.text = Project.projects[indexPath.row].identifier
-        let configuration = UIImage.SymbolConfiguration(paletteColors: [UIColor.backgroundRed!, UIColor.backgroundOrange!])
+        let configuration = UIImage.SymbolConfiguration(paletteColors: [UIColor.backgroundRed!, UIColor.backgroundRed!.withAlphaComponent(0.5)])
         cell.imageView?.image = UIImage(systemName: Project.projects[indexPath.row].image, withConfiguration: configuration)
         return cell
     }
