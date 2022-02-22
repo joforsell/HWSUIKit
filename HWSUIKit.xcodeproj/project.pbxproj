@@ -10,6 +10,8 @@
 		3E6AA90627BBE58800EF127E /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6AA90527BBE58800EF127E /* ProjectViewController.swift */; };
 		3E6AA90827BBED5C00EF127E /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6AA90727BBED5C00EF127E /* Project.swift */; };
 		3E6AA90A27BBF2D900EF127E /* FlagGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6AA90927BBF2D900EF127E /* FlagGameViewController.swift */; };
+		3E6B793A27C4FBF800B872A1 /* WebsiteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B793927C4FBF800B872A1 /* WebsiteTableViewController.swift */; };
+		3E6B793C27C4FCC600B872A1 /* Website.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B793B27C4FCC600B872A1 /* Website.swift */; };
 		3E6DD00A27BAEFF8006736CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6DD00927BAEFF8006736CB /* AppDelegate.swift */; };
 		3E6DD00C27BAEFF8006736CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6DD00B27BAEFF8006736CB /* SceneDelegate.swift */; };
 		3E6DD00E27BAEFF8006736CB /* StormViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6DD00D27BAEFF8006736CB /* StormViewerViewController.swift */; };
@@ -37,6 +39,8 @@
 		3E6AA90527BBE58800EF127E /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		3E6AA90727BBED5C00EF127E /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		3E6AA90927BBF2D900EF127E /* FlagGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagGameViewController.swift; sourceTree = "<group>"; };
+		3E6B793927C4FBF800B872A1 /* WebsiteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteTableViewController.swift; sourceTree = "<group>"; };
+		3E6B793B27C4FCC600B872A1 /* Website.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Website.swift; sourceTree = "<group>"; };
 		3E6DD00627BAEFF8006736CB /* HWSUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWSUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6DD00927BAEFF8006736CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E6DD00B27BAEFF8006736CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,10 +99,10 @@
 				3E6DD00927BAEFF8006736CB /* AppDelegate.swift */,
 				3E6DD00B27BAEFF8006736CB /* SceneDelegate.swift */,
 				3E6AA90527BBE58800EF127E /* ProjectViewController.swift */,
-				3E898AA227C43B2C001F4494 /* Browser */,
 				3E898A9F27C3CFA7001F4494 /* Storm Viewer */,
 				3E898A9E27C3CF9A001F4494 /* Guess the Flag */,
 				3E898A9D27C3CF90001F4494 /* Flag List */,
+				3E898AA227C43B2C001F4494 /* Browser */,
 				3E898AA027C3CFB2001F4494 /* Models */,
 				3E898AA127C3CFB9001F4494 /* Extensions and utilities */,
 				3E6DD00F27BAEFF8006736CB /* Main.storyboard */,
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				3E6AA90727BBED5C00EF127E /* Project.swift */,
+				3E6B793B27C4FCC600B872A1 /* Website.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */,
+				3E6B793927C4FBF800B872A1 /* WebsiteTableViewController.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -264,11 +270,13 @@
 				3E6DD00E27BAEFF8006736CB /* StormViewerViewController.swift in Sources */,
 				3E6DD00A27BAEFF8006736CB /* AppDelegate.swift in Sources */,
 				3E6DD00C27BAEFF8006736CB /* SceneDelegate.swift in Sources */,
+				3E6B793A27C4FBF800B872A1 /* WebsiteTableViewController.swift in Sources */,
 				3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */,
 				3E6AA90827BBED5C00EF127E /* Project.swift in Sources */,
 				3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */,
 				3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */,
 				3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */,
+				3E6B793C27C4FCC600B872A1 /* Website.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

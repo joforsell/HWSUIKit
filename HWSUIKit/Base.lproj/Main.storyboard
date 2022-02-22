@@ -247,10 +247,38 @@
             </objects>
             <point key="canvasLocation" x="1080" y="370"/>
         </scene>
+        <!--Website Table View Controller-->
+        <scene sceneID="cWV-Av-wmS">
+            <objects>
+                <tableViewController storyboardIdentifier="Easy Browser" id="0De-nM-GW5" customClass="WebsiteTableViewController" customModule="HWSUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bfe-hi-3Ka">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Website" id="hme-3X-lEs">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hme-3X-lEs" id="5hn-T7-ZqO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0De-nM-GW5" id="Scl-Yw-rkE"/>
+                            <outlet property="delegate" destination="0De-nM-GW5" id="Ctf-F0-7Cm"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Kg-wx-NZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="1039"/>
+        </scene>
         <!--Easy Browser View Controller-->
         <scene sceneID="Tjf-s5-6M7">
             <objects>
-                <viewController storyboardIdentifier="Easy Browser" id="Ds7-aB-aCx" customClass="EasyBrowserViewController" customModule="HWSUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Easy Browser Content" id="Ds7-aB-aCx" customClass="EasyBrowserViewController" customModule="HWSUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aKU-EQ-vHM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxy-7Q-7HE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080" y="1047"/>
+            <point key="canvasLocation" x="1770" y="1039"/>
         </scene>
         <!--Flag Detail View Controller-->
         <scene sceneID="UJE-gT-3Ks">
