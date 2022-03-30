@@ -9,6 +9,16 @@ import UIKit
 
 class ProjectViewController: UIViewController {
     @IBOutlet var projectTableView: UITableView!
+    
+    let gradientLayer: CAGradientLayer = {
+        let layer = CAGradientLayer()
+        layer.colors = [UIColor.backgroundOrange!.cgColor, UIColor.backgroundRed!.cgColor]
+        layer.startPoint = CGPoint(x: 1.0, y: 0.0)
+        layer.endPoint = CGPoint(x: 0.0, y: 1.0)
+        layer.locations = [0, 1]
+        
+        return layer
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +26,16 @@ class ProjectViewController: UIViewController {
         projectTableView.delegate = self
         projectTableView.dataSource = self
         projectTableView.backgroundColor = .clear
-        setGradientBackground(colorTop: UIColor.backgroundOrange!, colorBottom: UIColor.backgroundRed!)
         navigationItem.largeTitleDisplayMode = .never
+        view.layer.insertSublayer(gradientLayer, at: 0)
+        gradientLayer.frame = view.bounds
 
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        gradientLayer.frame = view.bounds
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,19 +63,5 @@ extension ProjectViewController: UITableViewDelegate, UITableViewDataSource {
             navigationController?.navigationBar.isHidden = false
             navigationController?.pushViewController(vc, animated: true)
         }
-    }
-}
-
-
-extension ProjectViewController {
-    func setGradientBackground(colorTop: UIColor, colorBottom: UIColor) {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [colorBottom.cgColor, colorTop.cgColor]
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
-        gradientLayer.locations = [0, 1]
-        gradientLayer.frame = view.bounds
-
-        view.layer.insertSublayer(gradientLayer, at: 0)
     }
 }

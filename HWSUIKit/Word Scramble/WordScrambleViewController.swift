@@ -10,7 +10,8 @@ import UIKit
 class WordScrambleViewController: UITableViewController {
     var allWords = [String]()
     var usedWords = [String]()
-    var wordCount: UILabel!
+    var wordCount: UIView!
+    var wordCountLabel: UILabel!
     var recordScore = 0
 
     override func viewDidLoad() {
@@ -59,7 +60,7 @@ class WordScrambleViewController: UITableViewController {
         }
         usedWords.removeAll(keepingCapacity: true)
         tableView.reloadData()
-        wordCount.text = "\(usedWords.count)"
+        wordCountLabel.text = "\(usedWords.count)"
     }
     
     @objc
@@ -85,7 +86,7 @@ class WordScrambleViewController: UITableViewController {
             switch result {
             case .success(_):
                 self?.usedWords.insert(answer.lowercased(), at: 0)
-                self?.wordCount.text = "\(self?.usedWords.count ?? 0)"
+                self?.wordCountLabel.text = "\(self?.usedWords.count ?? 0)"
                 
                 let indexPath = IndexPath(row: 0, section: 0)
                 self?.tableView.insertRows(at: [indexPath], with: .automatic)
@@ -142,26 +143,38 @@ class WordScrambleViewController: UITableViewController {
     }
     
     func setupWordCount() {
-        wordCount = UILabel()
+        wordCount = UIView()
         wordCount.translatesAutoresizingMaskIntoConstraints = false
-        wordCount.textAlignment = .center
-        wordCount.text = "\(usedWords.count)"
-        wordCount.textColor = .white
-        wordCount.font = UIFont.boldSystemFont(ofSize: 24)
-        wordCount.backgroundColor = .backgroundRed
-        wordCount.layer.cornerRadius = wordCount.frame.width/2
         wordCount.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         wordCount.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         wordCount.layer.shadowOpacity = 1.0
         wordCount.layer.shadowRadius = 2.0
-        wordCount.layer.masksToBounds = false
+        wordCount.frame = CGRect(origin: CGPoint(x: view.frame.maxX - 40, y: view.frame.minY + 20), size: CGSize(width: 40, height: 40))
+
+        wordCountLabel = UILabel()
+        wordCountLabel.translatesAutoresizingMaskIntoConstraints = false
+        wordCountLabel.textAlignment = .center
+        wordCountLabel.text = "\(usedWords.count)"
+        wordCountLabel.textColor = .white
+        wordCountLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        wordCountLabel.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        wordCountLabel.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        wordCountLabel.layer.shadowOpacity = 1.0
+        wordCountLabel.layer.shadowRadius = 2.0
+        wordCountLabel.backgroundColor = .backgroundRed
+        wordCountLabel.layer.cornerRadius = wordCount.frame.width/2
+        wordCountLabel.frame = CGRect(origin: wordCount.frame.origin, size: CGSize(width: 40, height: 40))
+        wordCountLabel.layer.masksToBounds = true
+        wordCount.addSubview(wordCountLabel)
         view.addSubview(wordCount)
         
         NSLayoutConstraint.activate([
-            wordCount.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 24),
-            wordCount.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor, constant: -24),
             wordCount.widthAnchor.constraint(equalToConstant: 40),
-            wordCount.widthAnchor.constraint(equalTo: wordCount.heightAnchor, multiplier: 1)
+            wordCount.widthAnchor.constraint(equalTo: wordCount.heightAnchor, multiplier: 1),
+            wordCountLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 24),
+            wordCountLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor, constant: -24),
+            wordCountLabel.widthAnchor.constraint(equalToConstant: 40),
+            wordCountLabel.widthAnchor.constraint(equalTo: wordCountLabel.heightAnchor, multiplier: 1),
         ])
     }
 }

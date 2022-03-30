@@ -37,7 +37,11 @@ class StormViewerViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
-        cell.textLabel?.text = pictures[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        content.text = (pictures[indexPath.row] as NSString).deletingPathExtension
+        let configuration = UIImage.SymbolConfiguration(paletteColors: [UIColor.backgroundRed!, UIColor.backgroundRed!.withAlphaComponent(0.5)])
+        content.image = UIImage(systemName: "photo.fill", withConfiguration: configuration)
+        cell.contentConfiguration = content
         return cell
     }
     

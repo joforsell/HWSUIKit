@@ -11,7 +11,6 @@ class FlagGameViewController: UIViewController {
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
-    @IBOutlet var scoreText: UILabel!
     
     var countries = [String]()
     var score = 0
@@ -38,9 +37,6 @@ class FlagGameViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
         title = capitalizedCountry(countries[correctAnswer])
-            
-        
-        scoreText.text = "You have \(score) points"
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -85,7 +81,7 @@ class FlagGameViewController: UIViewController {
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
-        
+
         button1.layer.borderColor = UIColor.lightGray.cgColor
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor

@@ -27,7 +27,8 @@ class FlagListViewControllerTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Country", for: indexPath)
         var content = cell.defaultContentConfiguration()
         content.image = UIImage(named: countries[indexPath.row])
-        content.imageProperties.cornerRadius = 10
+        content.imageProperties.cornerRadius = 2
+        content.imageProperties.maximumSize = CGSize(width: 60, height: 30)
         content.text = capitalizedCountry(countries[indexPath.row])
         cell.contentConfiguration = content
         return cell
