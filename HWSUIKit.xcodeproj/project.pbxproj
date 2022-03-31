@@ -34,6 +34,12 @@
 		3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6DD03227BAFAD2006736CB /* DetailViewController.swift */; };
 		3E6E097F27D41DE900BF13EE /* FlagListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E097E27D41DE900BF13EE /* FlagListCell.swift */; };
 		3E6E839627F5BE8500509C19 /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E839527F5BE8500509C19 /* ShoppingListController.swift */; };
+		3E6E839927F5FEC100509C19 /* WhiteHousePetitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E839827F5FEC100509C19 /* WhiteHousePetitionController.swift */; };
+		3E6E839B27F602C000509C19 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E839A27F602C000509C19 /* Petition.swift */; };
+		3E6E839D27F61CCE00509C19 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E839C27F61CCE00509C19 /* Petitions.swift */; };
+		3E6E839F27F6265100509C19 /* PetitionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E839E27F6265100509C19 /* PetitionDetailViewController.swift */; };
+		3E6E83A127F6399400509C19 /* WhiteHousePetitionsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E83A027F6399400509C19 /* WhiteHousePetitionsTabBarController.swift */; };
+		3E6E83A327F6425500509C19 /* WhiteHouseTopRatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E83A227F6425500509C19 /* WhiteHouseTopRatedController.swift */; };
 		3E6EB03727C797A3003AF178 /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EB03627C797A3003AF178 /* ErrorDescription.swift */; };
 		3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */; };
 		3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */; };
@@ -71,6 +77,12 @@
 		3E6DD03227BAFAD2006736CB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3E6E097E27D41DE900BF13EE /* FlagListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListCell.swift; sourceTree = "<group>"; };
 		3E6E839527F5BE8500509C19 /* ShoppingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
+		3E6E839827F5FEC100509C19 /* WhiteHousePetitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteHousePetitionController.swift; sourceTree = "<group>"; };
+		3E6E839A27F602C000509C19 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
+		3E6E839C27F61CCE00509C19 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
+		3E6E839E27F6265100509C19 /* PetitionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionDetailViewController.swift; sourceTree = "<group>"; };
+		3E6E83A027F6399400509C19 /* WhiteHousePetitionsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteHousePetitionsTabBarController.swift; sourceTree = "<group>"; };
+		3E6E83A227F6425500509C19 /* WhiteHouseTopRatedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteHouseTopRatedController.swift; sourceTree = "<group>"; };
 		3E6EB03627C797A3003AF178 /* ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
 		3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +146,7 @@
 				3E6B793F27C679E700B872A1 /* Word Scramble */,
 				3E69650227F45C4D002ABF3F /* AutoLayoutCode */,
 				3E6E839427F5BE6700509C19 /* Shopping List */,
+				3E6E839727F5FEA400509C19 /* White House Petitions */,
 				3E898AA027C3CFB2001F4494 /* Models */,
 				3E898AA127C3CFB9001F4494 /* Extensions and utilities */,
 				3E6DD00F27BAEFF8006736CB /* Main.storyboard */,
@@ -171,6 +184,17 @@
 			path = "Shopping List";
 			sourceTree = "<group>";
 		};
+		3E6E839727F5FEA400509C19 /* White House Petitions */ = {
+			isa = PBXGroup;
+			children = (
+				3E6E839827F5FEC100509C19 /* WhiteHousePetitionController.swift */,
+				3E6E83A227F6425500509C19 /* WhiteHouseTopRatedController.swift */,
+				3E6E83A027F6399400509C19 /* WhiteHousePetitionsTabBarController.swift */,
+				3E6E839E27F6265100509C19 /* PetitionDetailViewController.swift */,
+			);
+			path = "White House Petitions";
+			sourceTree = "<group>";
+		};
 		3E898A9D27C3CF90001F4494 /* Flag List */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +227,8 @@
 			children = (
 				3E6AA90727BBED5C00EF127E /* Project.swift */,
 				3E6B793B27C4FCC600B872A1 /* Website.swift */,
+				3E6E839A27F602C000509C19 /* Petition.swift */,
+				3E6E839C27F61CCE00509C19 /* Petitions.swift */,
 				3E6EB03627C797A3003AF178 /* ErrorDescription.swift */,
 			);
 			path = Models;
@@ -307,10 +333,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6E839927F5FEC100509C19 /* WhiteHousePetitionController.swift in Sources */,
 				3E69650427F45C82002ABF3F /* AutoLayoutCodeController.swift in Sources */,
 				3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */,
 				3E6AA90A27BBF2D900EF127E /* FlagGameViewController.swift in Sources */,
 				3E6AA90627BBE58800EF127E /* ProjectViewController.swift in Sources */,
+				3E6E83A327F6425500509C19 /* WhiteHouseTopRatedController.swift in Sources */,
+				3E6E839B27F602C000509C19 /* Petition.swift in Sources */,
+				3E6E83A127F6399400509C19 /* WhiteHousePetitionsTabBarController.swift in Sources */,
 				3E6E097F27D41DE900BF13EE /* FlagListCell.swift in Sources */,
 				3E6DD00E27BAEFF8006736CB /* StormViewerViewController.swift in Sources */,
 				3E6DD00A27BAEFF8006736CB /* AppDelegate.swift in Sources */,
@@ -318,12 +348,14 @@
 				3E6DD00C27BAEFF8006736CB /* SceneDelegate.swift in Sources */,
 				3E6B793A27C4FBF800B872A1 /* WebsiteTableViewController.swift in Sources */,
 				3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */,
+				3E6E839F27F6265100509C19 /* PetitionDetailViewController.swift in Sources */,
 				3E6AA90827BBED5C00EF127E /* Project.swift in Sources */,
 				3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */,
 				3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */,
 				3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */,
 				3E6B793E27C679E400B872A1 /* WordScrambleViewController.swift in Sources */,
 				3E6EB03727C797A3003AF178 /* ErrorDescription.swift in Sources */,
+				3E6E839D27F61CCE00509C19 /* Petitions.swift in Sources */,
 				3E6B793C27C4FCC600B872A1 /* Website.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

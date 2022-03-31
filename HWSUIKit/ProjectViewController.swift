@@ -10,13 +10,13 @@ import UIKit
 class ProjectViewController: UIViewController {
     @IBOutlet var projectTableView: UITableView!
     
+    // Creates the background gradient.
     let gradientLayer: CAGradientLayer = {
         let layer = CAGradientLayer()
         layer.colors = [UIColor.backgroundOrange!.cgColor, UIColor.backgroundRed!.cgColor]
         layer.startPoint = CGPoint(x: 1.0, y: 0.0)
         layer.endPoint = CGPoint(x: 0.0, y: 1.0)
         layer.locations = [0, 1]
-        
         return layer
     }()
 
@@ -32,25 +32,40 @@ class ProjectViewController: UIViewController {
 
     }
     
+    // Makes sure the background gradient frame stays up to date with to the view bounds.
+    // Used to avoid tiling of the gradient when device is rotated.
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
         gradientLayer.frame = view.bounds
     }
     
+    // Hides the navigation bar.
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
     }
     
+    // Changes the color of the section titles between sections.
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let header = view as? UITableViewHeaderFooterView {
             header.textLabel?.textColor = .white
+        }
+    }
+    
+    // Increases the size of the first section header to avoid clipping.
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return (tableView.sectionHeaderHeight * 1.2)
+        } else {
+            return tableView.sectionHeaderHeight
         }
     }
 
 }
 
 extension ProjectViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return Project.sections.count
     }

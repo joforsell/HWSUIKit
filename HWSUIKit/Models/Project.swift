@@ -22,13 +22,16 @@ struct Project {
         Project(identifier: "Word Scramble", image: "note.text"),
         Project(identifier: "Auto Layout Code", image: "chevron.left.forwardslash.chevron.right")],
         
-        [Project(identifier: "Shopping List", image: "bag.fill")]
+        [Project(identifier: "Shopping List", image: "bag.fill")],
+        
+        [Project(identifier: "White House Petitions", image: "house.fill")]
     ]
     
     static let sections = [
         "Projects 1-3",
         "Milestone Challenge 1",
         "Projects 4-6",
-        "Milestone Challenge 2"
+        "Milestone Challenge 2",
+        "Projects 7-9"
     ]
 }
