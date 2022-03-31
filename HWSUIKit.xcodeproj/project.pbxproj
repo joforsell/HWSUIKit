@@ -33,6 +33,7 @@
 		3E6DD03127BAF3AB006736CB /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6DD02727BAF3AB006736CB /* nssl0034.jpg */; };
 		3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6DD03227BAFAD2006736CB /* DetailViewController.swift */; };
 		3E6E097F27D41DE900BF13EE /* FlagListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E097E27D41DE900BF13EE /* FlagListCell.swift */; };
+		3E6E839627F5BE8500509C19 /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E839527F5BE8500509C19 /* ShoppingListController.swift */; };
 		3E6EB03727C797A3003AF178 /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EB03627C797A3003AF178 /* ErrorDescription.swift */; };
 		3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */; };
 		3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */; };
@@ -69,6 +70,7 @@
 		3E6DD02727BAF3AB006736CB /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		3E6DD03227BAFAD2006736CB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3E6E097E27D41DE900BF13EE /* FlagListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListCell.swift; sourceTree = "<group>"; };
+		3E6E839527F5BE8500509C19 /* ShoppingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
 		3E6EB03627C797A3003AF178 /* ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
 		3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				3E898AA227C43B2C001F4494 /* Browser */,
 				3E6B793F27C679E700B872A1 /* Word Scramble */,
 				3E69650227F45C4D002ABF3F /* AutoLayoutCode */,
+				3E6E839427F5BE6700509C19 /* Shopping List */,
 				3E898AA027C3CFB2001F4494 /* Models */,
 				3E898AA127C3CFB9001F4494 /* Extensions and utilities */,
 				3E6DD00F27BAEFF8006736CB /* Main.storyboard */,
@@ -158,6 +161,14 @@
 				3E6DD02727BAF3AB006736CB /* nssl0034.jpg */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		3E6E839427F5BE6700509C19 /* Shopping List */ = {
+			isa = PBXGroup;
+			children = (
+				3E6E839527F5BE8500509C19 /* ShoppingListController.swift */,
+			);
+			path = "Shopping List";
 			sourceTree = "<group>";
 		};
 		3E898A9D27C3CF90001F4494 /* Flag List */ = {
@@ -303,6 +314,7 @@
 				3E6E097F27D41DE900BF13EE /* FlagListCell.swift in Sources */,
 				3E6DD00E27BAEFF8006736CB /* StormViewerViewController.swift in Sources */,
 				3E6DD00A27BAEFF8006736CB /* AppDelegate.swift in Sources */,
+				3E6E839627F5BE8500509C19 /* ShoppingListController.swift in Sources */,
 				3E6DD00C27BAEFF8006736CB /* SceneDelegate.swift in Sources */,
 				3E6B793A27C4FBF800B872A1 /* WebsiteTableViewController.swift in Sources */,
 				3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */,

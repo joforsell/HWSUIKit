@@ -12,5 +12,9 @@ struct Website {
     let url: String
     let icon: String
     
-    static let safeWebsites = [Website(url: "apple.com", icon: "applelogo"), Website(url: "hackingwithswift.com", icon: "swift"), Website(url: "youtube.com", icon: "play.rectangle.fill")]
+    static let safeWebsites = [
+        Website(url: "apple.com", icon: "applelogo"),
+        Website(url: "hackingwithswift.com", icon: "swift"),
+        Website(url: "youtube.com", icon: "play.rectangle.fill")
+    ]
 }

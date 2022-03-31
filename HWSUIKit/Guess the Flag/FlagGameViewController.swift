@@ -12,6 +12,11 @@ class FlagGameViewController: UIViewController {
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
     
+    @IBOutlet var button1TopConstraint: NSLayoutConstraint!
+    @IBOutlet var button1EqualHeightConstraint: NSLayoutConstraint!
+    @IBOutlet var button2EqualHeightConstraint: NSLayoutConstraint!
+    @IBOutlet var button3EqualHeightConstraint: NSLayoutConstraint!
+    
     var countries = [String]()
     var score = 0
     var correctAnswer = 0
@@ -37,10 +42,63 @@ class FlagGameViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
         title = capitalizedCountry(countries[correctAnswer])
+        
+//        UIView.animate(withDuration: 0.5) {
+//            self.button1.layer.cornerRadius = 0
+//            self.button1.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.33).isActive = false
+//            self.button2.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.33).isActive = false
+//            self.button3.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.33).isActive = false
+//            self.button1.heightAnchor.constraint(equalTo: self.button2.heightAnchor, multiplier: 2).isActive = false
+//            self.button2.heightAnchor.constraint(equalTo: self.button1.heightAnchor, multiplier: 2).isActive = false
+//            self.button3.heightAnchor.constraint(equalTo: self.button1.heightAnchor, multiplier: 2).isActive = false
+//            self.button1EqualHeightConstraint.isActive = true
+//            self.button2EqualHeightConstraint.isActive = true
+//            self.button3EqualHeightConstraint.isActive = true
+//            self.button2.layer.cornerRadius = 0
+//            self.button3.layer.cornerRadius = 0
+//        }
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         var title: String
+        
+//        switch sender.tag {
+//        case 0:
+//            UIView.animate(withDuration: 0.5) {
+//                self.button1.layer.cornerRadius = 20
+//                self.button1EqualHeightConstraint.isActive = false
+//                self.button2EqualHeightConstraint.isActive = false
+//                self.button3EqualHeightConstraint.isActive = false
+//                self.button2.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.33).isActive = true
+//                self.button3.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.33).isActive = true
+//                self.button1.heightAnchor.constraint(equalTo: self.button2.heightAnchor, multiplier: 2).isActive = true
+//                self.view.layoutIfNeeded()
+//            }
+//        case 1:
+//            UIView.animate(withDuration: 0.5) {
+//                self.button2.layer.cornerRadius = 20
+//                self.button1EqualHeightConstraint.isActive = false
+//                self.button2EqualHeightConstraint.isActive = false
+//                self.button3EqualHeightConstraint.isActive = false
+//                self.button1.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.33).isActive = true
+//                self.button3.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.33).isActive = true
+//                self.button2.heightAnchor.constraint(equalTo: self.button1.heightAnchor, multiplier: 2).isActive = true
+//                self.view.layoutIfNeeded()
+//            }
+//        case 2:
+//            UIView.animate(withDuration: 0.5) {
+//                self.button3.layer.cornerRadius = 20
+//                self.button1EqualHeightConstraint.isActive = false
+//                self.button2EqualHeightConstraint.isActive = false
+//                self.button3EqualHeightConstraint.isActive = false
+//                self.button2.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.33).isActive = true
+//                self.button1.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.33).isActive = true
+//                self.button3.heightAnchor.constraint(equalTo: self.button1.heightAnchor, multiplier: 2).isActive = true
+//                self.view.layoutIfNeeded()
+//            }
+//        default:
+//            break
+//        }
         
         questionsAsked += 1
         
@@ -78,6 +136,10 @@ class FlagGameViewController: UIViewController {
     }
     
     func setupButtons() {
+        button1.contentMode = .scaleToFill
+        button2.contentMode = .scaleToFill
+        button3.contentMode = .scaleToFill
+        
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
@@ -86,23 +148,23 @@ class FlagGameViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
-        button1.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        button1.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
-        button1.layer.shadowOpacity = 1.0
-        button1.layer.shadowRadius = 2.0
-        button1.layer.masksToBounds = false
+//        button1.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+//        button1.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+//        button1.layer.shadowOpacity = 1.0
+//        button1.layer.shadowRadius = 2.0
+        button1.layer.masksToBounds = true
         
-        button2.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        button2.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
-        button2.layer.shadowOpacity = 1.0
-        button2.layer.shadowRadius = 2.0
-        button2.layer.masksToBounds = false
+//        button2.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+//        button2.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+//        button2.layer.shadowOpacity = 1.0
+//        button2.layer.shadowRadius = 2.0
+        button2.layer.masksToBounds = true
         
-        button3.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        button3.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
-        button3.layer.shadowOpacity = 1.0
-        button3.layer.shadowRadius = 2.0
-        button3.layer.masksToBounds = false
+//        button3.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+//        button3.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+//        button3.layer.shadowOpacity = 1.0
+//        button3.layer.shadowRadius = 2.0
+        button3.layer.masksToBounds = true
     }
     
     @objc

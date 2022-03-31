@@ -44,7 +44,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCd-x0-CDp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="-1523"/>
+            <point key="canvasLocation" x="1145" y="-1971"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="3c5-fF-v7D">
@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-u8-7CB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="-1523"/>
+            <point key="canvasLocation" x="1835" y="-1971"/>
         </scene>
         <!--Word Scramble View Controller-->
         <scene sceneID="CCl-oc-7gV">
@@ -110,7 +110,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqy-Rq-1fO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2936" y="-1523"/>
+            <point key="canvasLocation" x="2935" y="-1971"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mRS-UX-WOp">
@@ -167,8 +167,8 @@
                             <constraint firstItem="Rwo-nq-Vhu" firstAttribute="leading" secondItem="yus-Oh-SyO" secondAttribute="leading" id="GN0-gc-9KI"/>
                             <constraint firstItem="Rwo-nq-Vhu" firstAttribute="bottom" secondItem="yus-Oh-SyO" secondAttribute="bottom" id="KHa-at-RRK"/>
                             <constraint firstItem="yus-Oh-SyO" firstAttribute="trailing" secondItem="Rwo-nq-Vhu" secondAttribute="trailing" id="O4p-Zg-fOE"/>
-                            <constraint firstItem="Rwo-nq-Vhu" firstAttribute="top" secondItem="yus-Oh-SyO" secondAttribute="top" constant="160" id="TSs-wF-Kun"/>
                             <constraint firstItem="4UI-Rw-SO9" firstAttribute="centerX" secondItem="zl6-A6-44q" secondAttribute="centerX" id="Y00-72-BLR"/>
+                            <constraint firstItem="Rwo-nq-Vhu" firstAttribute="top" secondItem="4UI-Rw-SO9" secondAttribute="bottom" constant="12" id="a4P-vc-6mu"/>
                             <constraint firstItem="4UI-Rw-SO9" firstAttribute="top" secondItem="yus-Oh-SyO" secondAttribute="top" constant="20" id="jq1-X1-By6"/>
                         </constraints>
                     </view>
@@ -250,13 +250,17 @@
                     </view>
                     <connections>
                         <outlet property="button1" destination="Fh3-xk-QBM" id="ESi-xp-CYi"/>
+                        <outlet property="button1EqualHeightConstraint" destination="PbO-KT-Fj7" id="yZu-7B-3xD"/>
+                        <outlet property="button1TopConstraint" destination="xTr-6F-bR2" id="44r-cS-cDJ"/>
                         <outlet property="button2" destination="s6a-4u-lfi" id="KyF-u0-yrC"/>
+                        <outlet property="button2EqualHeightConstraint" destination="eV1-s3-V9z" id="3T8-g7-jIF"/>
                         <outlet property="button3" destination="56d-4E-wRk" id="ApQ-Oa-i9G"/>
+                        <outlet property="button3EqualHeightConstraint" destination="eV1-s3-V9z" id="3mM-fB-kn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9g-94-bNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="-745"/>
+            <point key="canvasLocation" x="1145" y="-1193"/>
         </scene>
         <!--Flag List View Controller Table View Controller-->
         <scene sceneID="7e9-Ga-8ar">
@@ -284,7 +288,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6q-6l-gnJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="58"/>
+            <point key="canvasLocation" x="1145" y="-390"/>
         </scene>
         <!--Website Table View Controller-->
         <scene sceneID="cWV-Av-wmS">
@@ -312,7 +316,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kg-wx-NZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="919"/>
+            <point key="canvasLocation" x="1145" y="471"/>
         </scene>
         <!--Auto Layout Code Controller-->
         <scene sceneID="ceh-RH-MeM">
@@ -327,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSp-bp-fTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149" y="1730"/>
+            <point key="canvasLocation" x="1148" y="1282"/>
         </scene>
         <!--Easy Browser View Controller-->
         <scene sceneID="Tjf-s5-6M7">
@@ -342,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxy-7Q-7HE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="919"/>
+            <point key="canvasLocation" x="1835" y="471"/>
         </scene>
         <!--Flag Detail View Controller-->
         <scene sceneID="UJE-gT-3Ks">
@@ -385,7 +389,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zT5-lt-gqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="58"/>
+            <point key="canvasLocation" x="1835" y="-390"/>
+        </scene>
+        <!--Shopping List Controller-->
+        <scene sceneID="cG8-X3-59C">
+            <objects>
+                <tableViewController storyboardIdentifier="Shopping List" id="e7u-xm-0kc" customClass="ShoppingListController" customModule="HWSUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vsQ-7f-fOB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Item" id="6ZQ-qF-JCL">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ZQ-qF-JCL" id="Oq9-5f-l78">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e7u-xm-0kc" id="dEj-vg-L9i"/>
+                            <outlet property="delegate" destination="e7u-xm-0kc" id="ltt-DJ-4Of"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UsP-4c-5eC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="2107"/>
         </scene>
     </scenes>
     <resources>

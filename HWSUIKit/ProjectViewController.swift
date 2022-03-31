@@ -41,25 +41,39 @@ class ProjectViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
     }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let header = view as? UITableViewHeaderFooterView {
+            header.textLabel?.textColor = .white
+        }
+    }
 
 }
 
 extension ProjectViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return Project.sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return Project.sections[section]
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Project.projects.count
+        return Project.projects[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Project", for: indexPath)
-        cell.textLabel?.text = Project.projects[indexPath.row].identifier
+        cell.textLabel?.text = Project.projects[indexPath.section][indexPath.row].identifier
         let configuration = UIImage.SymbolConfiguration(paletteColors: [UIColor.backgroundRed!, UIColor.backgroundRed!.withAlphaComponent(0.5)])
-        cell.imageView?.image = UIImage(systemName: Project.projects[indexPath.row].image, withConfiguration: configuration)
+        cell.imageView?.image = UIImage(systemName: Project.projects[indexPath.section][indexPath.row].image, withConfiguration: configuration)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if let vc = storyboard?.instantiateViewController(withIdentifier: Project.projects[indexPath.row].identifier) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: Project.projects[indexPath.section][indexPath.row].identifier) {
             navigationController?.navigationBar.isHidden = false
             navigationController?.pushViewController(vc, animated: true)
         }
