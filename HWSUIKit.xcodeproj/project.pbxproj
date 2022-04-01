@@ -41,6 +41,8 @@
 		3E6E83A127F6399400509C19 /* WhiteHousePetitionsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E83A027F6399400509C19 /* WhiteHousePetitionsTabBarController.swift */; };
 		3E6E83A327F6425500509C19 /* WhiteHouseTopRatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E83A227F6425500509C19 /* WhiteHouseTopRatedController.swift */; };
 		3E6EB03727C797A3003AF178 /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EB03627C797A3003AF178 /* ErrorDescription.swift */; };
+		3E6F245627F6C3B200ED5EEE /* SwiftyWordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */; };
+		3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F245727F6D02100ED5EEE /* UseIpadController.swift */; };
 		3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */; };
 		3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */; };
 		3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */; };
@@ -84,6 +86,8 @@
 		3E6E83A027F6399400509C19 /* WhiteHousePetitionsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteHousePetitionsTabBarController.swift; sourceTree = "<group>"; };
 		3E6E83A227F6425500509C19 /* WhiteHouseTopRatedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteHouseTopRatedController.swift; sourceTree = "<group>"; };
 		3E6EB03627C797A3003AF178 /* ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
+		3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyWordsController.swift; sourceTree = "<group>"; };
+		3E6F245727F6D02100ED5EEE /* UseIpadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseIpadController.swift; sourceTree = "<group>"; };
 		3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
 		3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBrowserViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				3E69650227F45C4D002ABF3F /* AutoLayoutCode */,
 				3E6E839427F5BE6700509C19 /* Shopping List */,
 				3E6E839727F5FEA400509C19 /* White House Petitions */,
+				3E6F245427F6C2ED00ED5EEE /* Swifty Words */,
 				3E898AA027C3CFB2001F4494 /* Models */,
 				3E898AA127C3CFB9001F4494 /* Extensions and utilities */,
 				3E6DD00F27BAEFF8006736CB /* Main.storyboard */,
@@ -195,6 +200,14 @@
 			path = "White House Petitions";
 			sourceTree = "<group>";
 		};
+		3E6F245427F6C2ED00ED5EEE /* Swifty Words */ = {
+			isa = PBXGroup;
+			children = (
+				3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */,
+			);
+			path = "Swifty Words";
+			sourceTree = "<group>";
+		};
 		3E898A9D27C3CF90001F4494 /* Flag List */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */,
+				3E6F245727F6D02100ED5EEE /* UseIpadController.swift */,
 			);
 			path = "Extensions and utilities";
 			sourceTree = "<group>";
@@ -334,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E6E839927F5FEC100509C19 /* WhiteHousePetitionController.swift in Sources */,
+				3E6F245627F6C3B200ED5EEE /* SwiftyWordsController.swift in Sources */,
 				3E69650427F45C82002ABF3F /* AutoLayoutCodeController.swift in Sources */,
 				3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */,
 				3E6AA90A27BBF2D900EF127E /* FlagGameViewController.swift in Sources */,
@@ -351,6 +366,7 @@
 				3E6E839F27F6265100509C19 /* PetitionDetailViewController.swift in Sources */,
 				3E6AA90827BBED5C00EF127E /* Project.swift in Sources */,
 				3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */,
+				3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */,
 				3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */,
 				3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */,
 				3E6B793E27C679E400B872A1 /* WordScrambleViewController.swift in Sources */,

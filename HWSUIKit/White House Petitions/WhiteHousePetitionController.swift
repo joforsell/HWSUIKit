@@ -7,11 +7,16 @@
 
 import UIKit
 
-class WhiteHousePetitionController: UITableViewController {
+class WhiteHousePetitionController: UITableViewController, UISearchBarDelegate {
     var petitions = [Petition]()
+    var filteredPetitions = [Petition]()
 
+    @IBOutlet var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchBar.delegate = self
                 
         let urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"
         
@@ -36,6 +41,7 @@ class WhiteHousePetitionController: UITableViewController {
         
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json) {
             petitions = jsonPetitions.results
+            filteredPetitions = jsonPetitions.results
             tableView.reloadData()
         }
     }
@@ -43,13 +49,13 @@ class WhiteHousePetitionController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return petitions.count
+            return filteredPetitions.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let petition = petitions[indexPath.row]
+        let petition = filteredPetitions[indexPath.row]
         content.text = petition.title
         content.secondaryText = petition.body
         content.textProperties.numberOfLines = 1
@@ -60,7 +66,23 @@ class WhiteHousePetitionController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = PetitionDetailViewController()
-        vc.detailItem = petitions[indexPath.row]
+        vc.detailItem = filteredPetitions[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredPetitions = []
+        
+        if searchText == "" {
+            filteredPetitions = petitions
+        } else {
+            for petition in petitions {
+                if petition.title.lowercased().contains(searchText.lowercased()) || petition.body.lowercased().contains(searchText.lowercased()) {
+                    filteredPetitions.append(petition)
+                }
+            }
+        }
+        
+        self.tableView.reloadData()
     }
 }

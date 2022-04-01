@@ -11,6 +11,19 @@ import UIKit
 struct Project {
     let identifier: String
     let image: String
+    let iPadIdentifier: String
+    
+    init(identifier: String, image: String, iPadIdentifier: String) {
+        self.identifier = identifier
+        self.image = image
+        self.iPadIdentifier = iPadIdentifier
+    }
+    
+    init(identifier: String, image: String) {
+        self.identifier = identifier
+        self.image = image
+        self.iPadIdentifier = identifier
+    }
     
     static let projects = [
         [Project(identifier: "Storm Viewer", image: "cloud.bolt.rain.fill"),
@@ -24,7 +37,8 @@ struct Project {
         
         [Project(identifier: "Shopping List", image: "bag.fill")],
         
-        [Project(identifier: "White House Petitions", image: "house.fill")]
+        [Project(identifier: "White House Petitions", image: "house.fill"),
+         Project(identifier: "Please Use iPad", image: "rectangle.and.text.magnifyingglass", iPadIdentifier: "Swifty Words")]
     ]
     
     static let sections = [

@@ -80,7 +80,7 @@ extension ProjectViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Project", for: indexPath)
-        cell.textLabel?.text = Project.projects[indexPath.section][indexPath.row].identifier
+        cell.textLabel?.text = Project.projects[indexPath.section][indexPath.row].iPadIdentifier
         let configuration = UIImage.SymbolConfiguration(paletteColors: [UIColor.backgroundRed!, UIColor.backgroundRed!.withAlphaComponent(0.5)])
         cell.imageView?.image = UIImage(systemName: Project.projects[indexPath.section][indexPath.row].image, withConfiguration: configuration)
         return cell
@@ -88,9 +88,16 @@ extension ProjectViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if let vc = storyboard?.instantiateViewController(withIdentifier: Project.projects[indexPath.section][indexPath.row].identifier) {
+        
+        // Using ternary operator (condition ? executedIfTrue : executedIfFalse) to conditionally choose controller identifier.
+        if let vc = storyboard?.instantiateViewController(withIdentifier: isPad() ? Project.projects[indexPath.section][indexPath.row].iPadIdentifier : Project.projects[indexPath.section][indexPath.row].identifier) {
             navigationController?.navigationBar.isHidden = false
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    // Checking if device is iPad or iPhone. Only iPads have .regular size class for both vertical and horizontal.
+    private func isPad() -> Bool {
+        return traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular
     }
 }
