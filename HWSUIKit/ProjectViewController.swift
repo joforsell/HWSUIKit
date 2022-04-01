@@ -9,6 +9,7 @@ import UIKit
 
 class ProjectViewController: UIViewController {
     @IBOutlet var projectTableView: UITableView!
+    @IBOutlet var HWSLogo: UIImageView!
     
     // Creates the background gradient.
     let gradientLayer: CAGradientLayer = {
@@ -29,6 +30,16 @@ class ProjectViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .never
         view.layer.insertSublayer(gradientLayer, at: 0)
         gradientLayer.frame = view.bounds
+        if isPad() {
+            projectTableView.widthAnchor.constraint(equalToConstant: 500).isActive = true
+            projectTableView.topAnchor.constraint(equalTo: HWSLogo.bottomAnchor, constant: 30).isActive = true
+            HWSLogo.widthAnchor.constraint(equalToConstant: 360).isActive = true
+        } else {
+            projectTableView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
+            projectTableView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
+            projectTableView.topAnchor.constraint(equalTo: HWSLogo.bottomAnchor, constant: 12).isActive = true
+            HWSLogo.widthAnchor.constraint(equalToConstant: 240).isActive = true
+        }
 
     }
     

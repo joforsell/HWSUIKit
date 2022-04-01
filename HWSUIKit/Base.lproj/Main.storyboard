@@ -138,43 +138,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rwo-nq-Vhu">
-                                <rect key="frame" x="0.0" y="248" width="414" height="614"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rwo-nq-Vhu">
+                                <rect key="frame" x="0.0" y="862" width="414" height="0.0"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Project" id="aSN-M3-Muw">
-                                        <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="49.5" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aSN-M3-Muw" id="I7a-Iu-8hU">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hwslogowithtext" translatesAutoresizingMaskIntoConstraints="NO" id="4UI-Rw-SO9">
-                                <rect key="frame" x="87" y="108" width="240" height="128"/>
+                                <rect key="frame" x="-504.5" y="108" width="1423" height="759"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4UI-Rw-SO9" secondAttribute="height" multiplier="15:8" id="KbR-KN-W0q"/>
-                                    <constraint firstAttribute="width" constant="240" id="mGP-Y4-V2L"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yus-Oh-SyO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Rwo-nq-Vhu" firstAttribute="trailing" secondItem="yus-Oh-SyO" secondAttribute="trailing" id="Ika-Dx-iJU"/>
                             <constraint firstItem="Rwo-nq-Vhu" firstAttribute="bottom" secondItem="yus-Oh-SyO" secondAttribute="bottom" id="KHa-at-RRK"/>
-                            <constraint firstItem="yus-Oh-SyO" firstAttribute="leading" secondItem="Rwo-nq-Vhu" secondAttribute="leading" id="Nc8-EC-5HE"/>
                             <constraint firstItem="4UI-Rw-SO9" firstAttribute="centerX" secondItem="zl6-A6-44q" secondAttribute="centerX" id="Y00-72-BLR"/>
-                            <constraint firstItem="Rwo-nq-Vhu" firstAttribute="top" secondItem="4UI-Rw-SO9" secondAttribute="bottom" constant="12" id="a4P-vc-6mu"/>
                             <constraint firstItem="Rwo-nq-Vhu" firstAttribute="centerX" secondItem="yus-Oh-SyO" secondAttribute="centerX" id="aMT-gH-E89"/>
                             <constraint firstItem="4UI-Rw-SO9" firstAttribute="top" secondItem="yus-Oh-SyO" secondAttribute="top" constant="20" id="jq1-X1-By6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U6j-pP-Je7"/>
                     <connections>
+                        <outlet property="HWSLogo" destination="4UI-Rw-SO9" id="ful-jn-0uw"/>
                         <outlet property="projectTableView" destination="Rwo-nq-Vhu" id="cTY-cO-yjY"/>
                     </connections>
                 </viewController>

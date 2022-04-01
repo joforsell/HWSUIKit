@@ -43,6 +43,8 @@
 		3E6EB03727C797A3003AF178 /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EB03627C797A3003AF178 /* ErrorDescription.swift */; };
 		3E6F245627F6C3B200ED5EEE /* SwiftyWordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */; };
 		3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F245727F6D02100ED5EEE /* UseIpadController.swift */; };
+		3E6F245B27F724D200ED5EEE /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F245927F724D200ED5EEE /* level1.txt */; };
+		3E6F245C27F724D200ED5EEE /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F245A27F724D200ED5EEE /* level2.txt */; };
 		3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */; };
 		3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */; };
 		3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */; };
@@ -88,6 +90,8 @@
 		3E6EB03627C797A3003AF178 /* ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
 		3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyWordsController.swift; sourceTree = "<group>"; };
 		3E6F245727F6D02100ED5EEE /* UseIpadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseIpadController.swift; sourceTree = "<group>"; };
+		3E6F245927F724D200ED5EEE /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		3E6F245A27F724D200ED5EEE /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 		3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
 		3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBrowserViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				3E6DD01427BAEFFA006736CB /* LaunchScreen.storyboard */,
 				3E6DD01727BAEFFA006736CB /* Info.plist */,
 				3E6B794027C67B2200B872A1 /* start.txt */,
+				3E6F245927F724D200ED5EEE /* level1.txt */,
+				3E6F245A27F724D200ED5EEE /* level2.txt */,
 			);
 			path = HWSUIKit;
 			sourceTree = "<group>";
@@ -323,7 +329,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6F245B27F724D200ED5EEE /* level1.txt in Resources */,
 				3E6DD02927BAF3AB006736CB /* nssl0046.jpg in Resources */,
+				3E6F245C27F724D200ED5EEE /* level2.txt in Resources */,
 				3E6DD03027BAF3AB006736CB /* nssl0033.jpg in Resources */,
 				3E6DD02C27BAF3AB006736CB /* nssl0051.jpg in Resources */,
 				3E6B794127C67B2200B872A1 /* start.txt in Resources */,
