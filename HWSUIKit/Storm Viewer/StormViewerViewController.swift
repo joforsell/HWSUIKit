@@ -18,6 +18,11 @@ class StormViewerViewController: UITableViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareApp))
         
+        performSelector(inBackground: #selector(loadImages), with: nil)
+    }
+
+    @objc
+    func loadImages() {
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         var items = try! fm.contentsOfDirectory(atPath: path)
@@ -29,7 +34,6 @@ class StormViewerViewController: UITableViewController {
             }
         }
     }
-
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count

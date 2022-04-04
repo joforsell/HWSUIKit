@@ -49,6 +49,11 @@
 		3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */; };
 		3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */; };
 		3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */; };
+		3EE24E5027FB788700A99EB6 /* HangmanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE24E4F27FB788700A99EB6 /* HangmanController.swift */; };
+		3EE24E5227FB7B3D00A99EB6 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE24E5127FB7B3D00A99EB6 /* KeyboardViewController.swift */; };
+		3EE24E5427FB7B5400A99EB6 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE24E5327FB7B5400A99EB6 /* BoardViewController.swift */; };
+		3EE24E5627FB852E00A99EB6 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE24E5527FB852E00A99EB6 /* KeyCell.swift */; };
+		3EE24E5827FB8F0400A99EB6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE24E5727FB8F0400A99EB6 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +101,11 @@
 		3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
 		3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBrowserViewController.swift; sourceTree = "<group>"; };
 		3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+StaticColors.swift"; sourceTree = "<group>"; };
+		3EE24E4F27FB788700A99EB6 /* HangmanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanController.swift; sourceTree = "<group>"; };
+		3EE24E5127FB7B3D00A99EB6 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		3EE24E5327FB7B5400A99EB6 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		3EE24E5527FB852E00A99EB6 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
+		3EE24E5727FB8F0400A99EB6 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +165,8 @@
 				3E69650227F45C4D002ABF3F /* AutoLayoutCode */,
 				3E6E839427F5BE6700509C19 /* Shopping List */,
 				3E6E839727F5FEA400509C19 /* White House Petitions */,
-				3E6F245427F6C2ED00ED5EEE /* Swifty Words */,
+				3E6F245427F6C2ED00ED5EEE /* 7 Swifty Words */,
+				3EE24E4E27FB779A00A99EB6 /* Hangman */,
 				3E898AA027C3CFB2001F4494 /* Models */,
 				3E898AA127C3CFB9001F4494 /* Extensions and utilities */,
 				3E6DD00F27BAEFF8006736CB /* Main.storyboard */,
@@ -206,12 +217,12 @@
 			path = "White House Petitions";
 			sourceTree = "<group>";
 		};
-		3E6F245427F6C2ED00ED5EEE /* Swifty Words */ = {
+		3E6F245427F6C2ED00ED5EEE /* 7 Swifty Words */ = {
 			isa = PBXGroup;
 			children = (
 				3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */,
 			);
-			path = "Swifty Words";
+			path = "7 Swifty Words";
 			sourceTree = "<group>";
 		};
 		3E898A9D27C3CF90001F4494 /* Flag List */ = {
@@ -269,6 +280,18 @@
 				3E6B793927C4FBF800B872A1 /* WebsiteTableViewController.swift */,
 			);
 			path = Browser;
+			sourceTree = "<group>";
+		};
+		3EE24E4E27FB779A00A99EB6 /* Hangman */ = {
+			isa = PBXGroup;
+			children = (
+				3EE24E4F27FB788700A99EB6 /* HangmanController.swift */,
+				3EE24E5727FB8F0400A99EB6 /* ImageViewController.swift */,
+				3EE24E5127FB7B3D00A99EB6 /* KeyboardViewController.swift */,
+				3EE24E5527FB852E00A99EB6 /* KeyCell.swift */,
+				3EE24E5327FB7B5400A99EB6 /* BoardViewController.swift */,
+			);
+			path = Hangman;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,16 +387,21 @@
 				3E6E83A327F6425500509C19 /* WhiteHouseTopRatedController.swift in Sources */,
 				3E6E839B27F602C000509C19 /* Petition.swift in Sources */,
 				3E6E83A127F6399400509C19 /* WhiteHousePetitionsTabBarController.swift in Sources */,
+				3EE24E5627FB852E00A99EB6 /* KeyCell.swift in Sources */,
 				3E6E097F27D41DE900BF13EE /* FlagListCell.swift in Sources */,
+				3EE24E5427FB7B5400A99EB6 /* BoardViewController.swift in Sources */,
 				3E6DD00E27BAEFF8006736CB /* StormViewerViewController.swift in Sources */,
 				3E6DD00A27BAEFF8006736CB /* AppDelegate.swift in Sources */,
 				3E6E839627F5BE8500509C19 /* ShoppingListController.swift in Sources */,
 				3E6DD00C27BAEFF8006736CB /* SceneDelegate.swift in Sources */,
 				3E6B793A27C4FBF800B872A1 /* WebsiteTableViewController.swift in Sources */,
+				3EE24E5827FB8F0400A99EB6 /* ImageViewController.swift in Sources */,
+				3EE24E5027FB788700A99EB6 /* HangmanController.swift in Sources */,
 				3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */,
 				3E6E839F27F6265100509C19 /* PetitionDetailViewController.swift in Sources */,
 				3E6AA90827BBED5C00EF127E /* Project.swift in Sources */,
 				3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */,
+				3EE24E5227FB7B3D00A99EB6 /* KeyboardViewController.swift in Sources */,
 				3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */,
 				3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */,
 				3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */,

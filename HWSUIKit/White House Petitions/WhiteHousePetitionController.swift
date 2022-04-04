@@ -49,6 +49,7 @@ class WhiteHousePetitionController: UITableViewController, UISearchBarDelegate {
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json) {
             petitions = jsonPetitions.results
             filteredPetitions = jsonPetitions.results
+            // Using performSelector on main here gives runtime thread warnings. Don't know why.
             DispatchQueue.main.async { [weak self] in
                 self?.tableView.reloadData()
             }

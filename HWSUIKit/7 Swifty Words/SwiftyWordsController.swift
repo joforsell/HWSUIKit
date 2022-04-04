@@ -43,7 +43,7 @@ class SwiftyWordsController: UIViewController {
         setupButtons()
         setConstraints()
         
-        loadLevel()
+        performSelector(inBackground: #selector(loadLevel), with: nil)
     }
     
     @objc
@@ -114,6 +114,7 @@ class SwiftyWordsController: UIViewController {
         }
     }
     
+    @objc
     func loadLevel() {
         var clueString = ""
         var solutionString = ""
@@ -140,15 +141,17 @@ class SwiftyWordsController: UIViewController {
                 }
             }
         }
+        DispatchQueue.main.async { [weak self] in
+
+            self?.cluesLabel.text = clueString.trimmingCharacters(in: .whitespacesAndNewlines)
+            self?.answersLabel.text = solutionString.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        cluesLabel.text = clueString.trimmingCharacters(in: .whitespacesAndNewlines)
-        answersLabel.text = solutionString.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        letterButtons.shuffle()
-        
-        if letterButtons.count == letterBits.count {
-            for i in 0..<letterButtons.count {
-                letterButtons[i].setTitle(letterBits[i], for: .normal)
+            self?.letterButtons.shuffle()
+            
+            if self?.letterButtons.count == letterBits.count {
+                for i in 0..<(self?.letterButtons.count ?? 1) {
+                    self?.letterButtons[i].setTitle(letterBits[i], for: .normal)
+                }
             }
         }
     }
