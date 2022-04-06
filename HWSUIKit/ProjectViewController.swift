@@ -27,6 +27,7 @@ class ProjectViewController: UIViewController {
         projectTableView.delegate = self
         projectTableView.dataSource = self
         projectTableView.backgroundColor = .clear
+        projectTableView.showsVerticalScrollIndicator = false
         navigationItem.largeTitleDisplayMode = .never
         view.layer.insertSublayer(gradientLayer, at: 0)
         gradientLayer.frame = view.bounds

@@ -45,6 +45,8 @@
 		3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F245727F6D02100ED5EEE /* UseIpadController.swift */; };
 		3E6F245B27F724D200ED5EEE /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F245927F724D200ED5EEE /* level1.txt */; };
 		3E6F245C27F724D200ED5EEE /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F245A27F724D200ED5EEE /* level2.txt */; };
+		3E6F575E27FD8267001DA5F5 /* GuessCountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F575D27FD8267001DA5F5 /* GuessCountController.swift */; };
+		3E6F576227FDFD61001DA5F5 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F576127FDFD61001DA5F5 /* EndGameViewController.swift */; };
 		3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */; };
 		3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */; };
 		3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */; };
@@ -97,6 +99,8 @@
 		3E6F245727F6D02100ED5EEE /* UseIpadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseIpadController.swift; sourceTree = "<group>"; };
 		3E6F245927F724D200ED5EEE /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 		3E6F245A27F724D200ED5EEE /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
+		3E6F575D27FD8267001DA5F5 /* GuessCountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessCountController.swift; sourceTree = "<group>"; };
+		3E6F576127FDFD61001DA5F5 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
 		3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBrowserViewController.swift; sourceTree = "<group>"; };
@@ -287,9 +291,11 @@
 			children = (
 				3EE24E4F27FB788700A99EB6 /* HangmanController.swift */,
 				3EE24E5727FB8F0400A99EB6 /* ImageViewController.swift */,
+				3E6F575D27FD8267001DA5F5 /* GuessCountController.swift */,
+				3EE24E5327FB7B5400A99EB6 /* BoardViewController.swift */,
+				3E6F576127FDFD61001DA5F5 /* EndGameViewController.swift */,
 				3EE24E5127FB7B3D00A99EB6 /* KeyboardViewController.swift */,
 				3EE24E5527FB852E00A99EB6 /* KeyCell.swift */,
-				3EE24E5327FB7B5400A99EB6 /* BoardViewController.swift */,
 			);
 			path = Hangman;
 			sourceTree = "<group>";
@@ -387,6 +393,7 @@
 				3E6E83A327F6425500509C19 /* WhiteHouseTopRatedController.swift in Sources */,
 				3E6E839B27F602C000509C19 /* Petition.swift in Sources */,
 				3E6E83A127F6399400509C19 /* WhiteHousePetitionsTabBarController.swift in Sources */,
+				3E6F575E27FD8267001DA5F5 /* GuessCountController.swift in Sources */,
 				3EE24E5627FB852E00A99EB6 /* KeyCell.swift in Sources */,
 				3E6E097F27D41DE900BF13EE /* FlagListCell.swift in Sources */,
 				3EE24E5427FB7B5400A99EB6 /* BoardViewController.swift in Sources */,
@@ -406,6 +413,7 @@
 				3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */,
 				3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */,
 				3E6B793E27C679E400B872A1 /* WordScrambleViewController.swift in Sources */,
+				3E6F576227FDFD61001DA5F5 /* EndGameViewController.swift in Sources */,
 				3E6EB03727C797A3003AF178 /* ErrorDescription.swift in Sources */,
 				3E6E839D27F61CCE00509C19 /* Petitions.swift in Sources */,
 				3E6B793C27C4FCC600B872A1 /* Website.swift in Sources */,

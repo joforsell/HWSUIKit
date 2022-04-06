@@ -7,7 +7,21 @@
 
 import UIKit
 
+protocol KeyboardViewControllerDelegate: AnyObject {
+    func didTapKey(with letter: Character)
+}
+
+protocol GameDataSource: AnyObject {
+    var currentGuesses: [Character?] { get }
+    var correctAnswer: [Character?] { get }
+    var wrongGuesses: Int { get }
+    func isLetterHidden(at indexPath: IndexPath) -> Bool
+}
+
 class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    weak var delegate: KeyboardViewControllerDelegate?
+    weak var dataSource: GameDataSource?
     
     let letters = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
     private var keys = [[Character]]()
@@ -26,7 +40,8 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayo
 
         collectionView.delegate = self
         collectionView.dataSource = self
-
+        
+        collectionView.backgroundColor = .clear
         view.addSubview(collectionView)
         NSLayoutConstraint.activate([
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
@@ -39,6 +54,10 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayo
             let chars = Array(row)
             keys.append(chars)
         }
+    }
+    
+    public func reloadData() {
+        collectionView.reloadData()
     }
 }
 
@@ -57,7 +76,29 @@ extension KeyboardViewController {
         }
         let letter = keys[indexPath.section][indexPath.row]
         cell.configure(with: letter)
+        cell.backgroundColor = setBackgroundColor(for: letter)
+        cell.label.isHidden = hideLetter(letter)
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.systemGray3.cgColor
         return cell
+    }
+    
+    func setBackgroundColor(for letter: Character) -> UIColor? {
+        guard let dataSource = dataSource else { return nil }
+        
+        if dataSource.currentGuesses.contains(letter) && dataSource.correctAnswer.contains(letter) {
+            return .systemGreen
+        } else if dataSource.currentGuesses.contains(letter) {
+            return .systemRed
+        } else {
+            return .systemGray
+        }
+    }
+    
+    func hideLetter(_ letter: Character) -> Bool {
+        guard let dataSource = dataSource else { return true }
+        
+        return dataSource.currentGuesses.contains(letter) && !dataSource.correctAnswer.contains(letter)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -90,6 +131,9 @@ extension KeyboardViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let letter = keys[indexPath.section][indexPath.row]
+        delegate?.didTapKey(with: letter)
+        collectionView.reloadData()
     }
 }

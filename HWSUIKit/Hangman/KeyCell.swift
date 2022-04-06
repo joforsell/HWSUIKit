@@ -15,7 +15,6 @@ class KeyCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 18, weight: .medium)
         return label
     }()
     
@@ -23,6 +22,8 @@ class KeyCell: UICollectionViewCell {
         super.init(frame: frame)
         backgroundColor = .systemGray
         contentView.addSubview(label)
+        let fontSize = contentView.frame.width / 2
+        label.font = .systemFont(ofSize: fontSize, weight: .medium)
         NSLayoutConstraint.activate([
             label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
@@ -40,7 +41,9 @@ class KeyCell: UICollectionViewCell {
         label.text = nil
     }
     
-    func configure(with letter: Character) {
-        label.text = String(letter).uppercased()
+    func configure(with letter: Character?) {
+        if let letter = letter {
+            label.text = String(letter).uppercased()
+        }
     }
 }
