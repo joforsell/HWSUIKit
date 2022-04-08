@@ -40,7 +40,9 @@ struct Project {
         [Project(identifier: "White House Petitions", image: "house.fill"),
          Project(identifier: "Please Use iPad", image: "rectangle.and.text.magnifyingglass", iPadIdentifier: "7 Swifty Words")],
         
-        [Project(identifier: "Hangman", image: "character.textbox")]
+        [Project(identifier: "Hangman", image: "character.textbox")],
+        
+        [Project(identifier: "Names to Faces", image: "face.smiling")]
     ]
     
     static let sections = [
@@ -49,6 +51,7 @@ struct Project {
         "Projects 4-6",
         "Milestone Challenge 2",
         "Projects 7-9",
-        "Milestone Challenge 3"
+        "Milestone Challenge 3",
+        "Projects 10-12"
     ]
 }

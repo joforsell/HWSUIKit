@@ -41,6 +41,9 @@
 		3E6E83A127F6399400509C19 /* WhiteHousePetitionsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E83A027F6399400509C19 /* WhiteHousePetitionsTabBarController.swift */; };
 		3E6E83A327F6425500509C19 /* WhiteHouseTopRatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E83A227F6425500509C19 /* WhiteHouseTopRatedController.swift */; };
 		3E6EB03727C797A3003AF178 /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EB03627C797A3003AF178 /* ErrorDescription.swift */; };
+		3E6EDB7727FEC9A10065E34B /* NamesToFacesControllerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EDB7627FEC9A10065E34B /* NamesToFacesControllerController.swift */; };
+		3E6EDB7927FECBF80065E34B /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EDB7827FECBF80065E34B /* PersonCell.swift */; };
+		3E6EDB9D27FF0FCC0065E34B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EDB9C27FF0FCC0065E34B /* Person.swift */; };
 		3E6F245627F6C3B200ED5EEE /* SwiftyWordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */; };
 		3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F245727F6D02100ED5EEE /* UseIpadController.swift */; };
 		3E6F245B27F724D200ED5EEE /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F245927F724D200ED5EEE /* level1.txt */; };
@@ -95,6 +98,9 @@
 		3E6E83A027F6399400509C19 /* WhiteHousePetitionsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteHousePetitionsTabBarController.swift; sourceTree = "<group>"; };
 		3E6E83A227F6425500509C19 /* WhiteHouseTopRatedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteHouseTopRatedController.swift; sourceTree = "<group>"; };
 		3E6EB03627C797A3003AF178 /* ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
+		3E6EDB7627FEC9A10065E34B /* NamesToFacesControllerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesToFacesControllerController.swift; sourceTree = "<group>"; };
+		3E6EDB7827FECBF80065E34B /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		3E6EDB9C27FF0FCC0065E34B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyWordsController.swift; sourceTree = "<group>"; };
 		3E6F245727F6D02100ED5EEE /* UseIpadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseIpadController.swift; sourceTree = "<group>"; };
 		3E6F245927F724D200ED5EEE /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 				3E6E839727F5FEA400509C19 /* White House Petitions */,
 				3E6F245427F6C2ED00ED5EEE /* 7 Swifty Words */,
 				3EE24E4E27FB779A00A99EB6 /* Hangman */,
+				3E6EDB7527FEC96B0065E34B /* Names to Faces */,
 				3E898AA027C3CFB2001F4494 /* Models */,
 				3E898AA127C3CFB9001F4494 /* Extensions and utilities */,
 				3E6DD00F27BAEFF8006736CB /* Main.storyboard */,
@@ -219,6 +226,16 @@
 				3E6E839E27F6265100509C19 /* PetitionDetailViewController.swift */,
 			);
 			path = "White House Petitions";
+			sourceTree = "<group>";
+		};
+		3E6EDB7527FEC96B0065E34B /* Names to Faces */ = {
+			isa = PBXGroup;
+			children = (
+				3E6EDB7627FEC9A10065E34B /* NamesToFacesControllerController.swift */,
+				3E6EDB9C27FF0FCC0065E34B /* Person.swift */,
+				3E6EDB7827FECBF80065E34B /* PersonCell.swift */,
+			);
+			path = "Names to Faces";
 			sourceTree = "<group>";
 		};
 		3E6F245427F6C2ED00ED5EEE /* 7 Swifty Words */ = {
@@ -390,6 +407,8 @@
 				3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */,
 				3E6AA90A27BBF2D900EF127E /* FlagGameViewController.swift in Sources */,
 				3E6AA90627BBE58800EF127E /* ProjectViewController.swift in Sources */,
+				3E6EDB9D27FF0FCC0065E34B /* Person.swift in Sources */,
+				3E6EDB7927FECBF80065E34B /* PersonCell.swift in Sources */,
 				3E6E83A327F6425500509C19 /* WhiteHouseTopRatedController.swift in Sources */,
 				3E6E839B27F602C000509C19 /* Petition.swift in Sources */,
 				3E6E83A127F6399400509C19 /* WhiteHousePetitionsTabBarController.swift in Sources */,
@@ -410,6 +429,7 @@
 				3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */,
 				3EE24E5227FB7B3D00A99EB6 /* KeyboardViewController.swift in Sources */,
 				3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */,
+				3E6EDB7727FEC9A10065E34B /* NamesToFacesControllerController.swift in Sources */,
 				3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */,
 				3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */,
 				3E6B793E27C679E400B872A1 /* WordScrambleViewController.swift in Sources */,
@@ -500,6 +520,8 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Debug;
 		};
@@ -555,6 +577,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Release;
 		};
