@@ -14,7 +14,7 @@ class StormViewerViewController: UITableViewController {
         super.viewDidLoad()
         
         title = "Storm Viewer"
-        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .never
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareApp))
         

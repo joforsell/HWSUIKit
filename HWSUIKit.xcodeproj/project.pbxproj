@@ -44,6 +44,9 @@
 		3E6EDB7727FEC9A10065E34B /* NamesToFacesControllerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EDB7627FEC9A10065E34B /* NamesToFacesControllerController.swift */; };
 		3E6EDB7927FECBF80065E34B /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EDB7827FECBF80065E34B /* PersonCell.swift */; };
 		3E6EDB9D27FF0FCC0065E34B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EDB9C27FF0FCC0065E34B /* Person.swift */; };
+		3E6EDBA02800160B0065E34B /* StormViewerPresentationModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EDB9F2800160B0065E34B /* StormViewerPresentationModeController.swift */; };
+		3E6EDBA22800420A0065E34B /* StormViewerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EDBA12800420A0065E34B /* StormViewerCollectionViewController.swift */; };
+		3E6EDBA42800429A0065E34B /* StormImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EDBA32800429A0065E34B /* StormImageCell.swift */; };
 		3E6F245627F6C3B200ED5EEE /* SwiftyWordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */; };
 		3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F245727F6D02100ED5EEE /* UseIpadController.swift */; };
 		3E6F245B27F724D200ED5EEE /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F245927F724D200ED5EEE /* level1.txt */; };
@@ -101,6 +104,9 @@
 		3E6EDB7627FEC9A10065E34B /* NamesToFacesControllerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesToFacesControllerController.swift; sourceTree = "<group>"; };
 		3E6EDB7827FECBF80065E34B /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		3E6EDB9C27FF0FCC0065E34B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3E6EDB9F2800160B0065E34B /* StormViewerPresentationModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerPresentationModeController.swift; sourceTree = "<group>"; };
+		3E6EDBA12800420A0065E34B /* StormViewerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerCollectionViewController.swift; sourceTree = "<group>"; };
+		3E6EDBA32800429A0065E34B /* StormImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormImageCell.swift; sourceTree = "<group>"; };
 		3E6F245527F6C3B200ED5EEE /* SwiftyWordsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyWordsController.swift; sourceTree = "<group>"; };
 		3E6F245727F6D02100ED5EEE /* UseIpadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseIpadController.swift; sourceTree = "<group>"; };
 		3E6F245927F724D200ED5EEE /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
@@ -269,6 +275,9 @@
 			children = (
 				3E6DD00D27BAEFF8006736CB /* StormViewerViewController.swift */,
 				3E6DD03227BAFAD2006736CB /* DetailViewController.swift */,
+				3E6EDB9F2800160B0065E34B /* StormViewerPresentationModeController.swift */,
+				3E6EDBA12800420A0065E34B /* StormViewerCollectionViewController.swift */,
+				3E6EDBA32800429A0065E34B /* StormImageCell.swift */,
 			);
 			path = "Storm Viewer";
 			sourceTree = "<group>";
@@ -423,9 +432,11 @@
 				3E6B793A27C4FBF800B872A1 /* WebsiteTableViewController.swift in Sources */,
 				3EE24E5827FB8F0400A99EB6 /* ImageViewController.swift in Sources */,
 				3EE24E5027FB788700A99EB6 /* HangmanController.swift in Sources */,
+				3E6EDBA42800429A0065E34B /* StormImageCell.swift in Sources */,
 				3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */,
 				3E6E839F27F6265100509C19 /* PetitionDetailViewController.swift in Sources */,
 				3E6AA90827BBED5C00EF127E /* Project.swift in Sources */,
+				3E6EDBA02800160B0065E34B /* StormViewerPresentationModeController.swift in Sources */,
 				3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */,
 				3EE24E5227FB7B3D00A99EB6 /* KeyboardViewController.swift in Sources */,
 				3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */,
@@ -436,6 +447,7 @@
 				3E6F576227FDFD61001DA5F5 /* EndGameViewController.swift in Sources */,
 				3E6EB03727C797A3003AF178 /* ErrorDescription.swift in Sources */,
 				3E6E839D27F61CCE00509C19 /* Petitions.swift in Sources */,
+				3E6EDBA22800420A0065E34B /* StormViewerCollectionViewController.swift in Sources */,
 				3E6B793C27C4FCC600B872A1 /* Website.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,6 +603,7 @@
 				DEVELOPMENT_TEAM = 5PNV6G957X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HWSUIKit/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To save a person using a new photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -620,6 +633,7 @@
 				DEVELOPMENT_TEAM = 5PNV6G957X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HWSUIKit/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To save a person using a new photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
