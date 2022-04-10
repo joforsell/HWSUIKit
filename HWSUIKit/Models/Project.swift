@@ -42,7 +42,8 @@ struct Project {
         
         [Project(identifier: "Hangman", image: "character.textbox")],
         
-        [Project(identifier: "Names to Faces", image: "face.smiling")]
+        [Project(identifier: "Names to Faces", image: "face.smiling.fill"),
+        Project(identifier: "Pachinko", image: "gamecontroller.fill")]
     ]
     
     static let sections = [

@@ -101,10 +101,17 @@ extension ProjectViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        // Using ternary operator (condition ? executedIfTrue : executedIfFalse) to conditionally choose controller identifier.
-        if let vc = storyboard?.instantiateViewController(withIdentifier: isPad() ? Project.projects[indexPath.section][indexPath.row].iPadIdentifier : Project.projects[indexPath.section][indexPath.row].identifier) {
-            navigationController?.navigationBar.isHidden = false
-            navigationController?.pushViewController(vc, animated: true)
+        if Project.projects[indexPath.section][indexPath.row].identifier == "Pachinko" {
+            let url = URL(string: "hwspachinko://")!
+            UIApplication.shared.open(url, options: [:]) { success in
+                //
+            }
+        } else {
+            // Using ternary operator (condition ? executedIfTrue : executedIfFalse) to conditionally choose controller identifier.
+            if let vc = storyboard?.instantiateViewController(withIdentifier: isPad() ? Project.projects[indexPath.section][indexPath.row].iPadIdentifier : Project.projects[indexPath.section][indexPath.row].identifier) {
+                navigationController?.navigationBar.isHidden = false
+                navigationController?.pushViewController(vc, animated: true)
+            }
         }
     }
     

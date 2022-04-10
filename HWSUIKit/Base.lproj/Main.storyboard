@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="udH-aq-0bE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -262,11 +263,9 @@
                                     <constraint firstAttribute="width" secondItem="Fh3-xk-QBM" secondAttribute="height" multiplier="2:1" id="wmL-nv-VUh"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us" imagePadding="0.0">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
+                                <state key="normal" title="Button" image="us">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="yif-3X-ppA" eventType="touchUpInside" id="U4g-dV-4kr"/>
                                 </connections>
@@ -277,10 +276,8 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="s6a-4u-lfi" secondAttribute="height" multiplier="2:1" id="5zm-wT-kRy"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ireland">
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="ireland"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="yif-3X-ppA" eventType="touchUpInside" id="J5M-9J-aWr"/>
                                 </connections>
@@ -291,10 +288,8 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="56d-4E-wRk" secondAttribute="height" multiplier="2:1" id="DaD-Aw-BMg"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="spain">
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="spain"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="yif-3X-ppA" eventType="touchUpInside" id="q46-1k-mFW"/>
                                 </connections>
