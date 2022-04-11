@@ -32,7 +32,6 @@
 		3E6DD03027BAF3AB006736CB /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6DD02627BAF3AB006736CB /* nssl0033.jpg */; };
 		3E6DD03127BAF3AB006736CB /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6DD02727BAF3AB006736CB /* nssl0034.jpg */; };
 		3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6DD03227BAFAD2006736CB /* DetailViewController.swift */; };
-		3E6E097F27D41DE900BF13EE /* FlagListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E097E27D41DE900BF13EE /* FlagListCell.swift */; };
 		3E6E839627F5BE8500509C19 /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E839527F5BE8500509C19 /* ShoppingListController.swift */; };
 		3E6E839927F5FEC100509C19 /* WhiteHousePetitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E839827F5FEC100509C19 /* WhiteHousePetitionController.swift */; };
 		3E6E839B27F602C000509C19 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E839A27F602C000509C19 /* Petition.swift */; };
@@ -56,6 +55,10 @@
 		3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */; };
 		3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */; };
 		3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */; };
+		3E9346562804A0690006A133 /* InterestingPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9346552804A0690006A133 /* InterestingPlacesController.swift */; };
+		3E9346582804A1040006A133 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9346572804A1040006A133 /* Place.swift */; };
+		3E93465A2804A3660006A133 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9346592804A3660006A133 /* PictureViewController.swift */; };
+		3E93465E2804A8FA0006A133 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93465D2804A8FA0006A133 /* PlaceCell.swift */; };
 		3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */; };
 		3EE24E5027FB788700A99EB6 /* HangmanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE24E4F27FB788700A99EB6 /* HangmanController.swift */; };
 		3EE24E5227FB7B3D00A99EB6 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE24E5127FB7B3D00A99EB6 /* KeyboardViewController.swift */; };
@@ -92,7 +95,6 @@
 		3E6DD02627BAF3AB006736CB /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
 		3E6DD02727BAF3AB006736CB /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		3E6DD03227BAFAD2006736CB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		3E6E097E27D41DE900BF13EE /* FlagListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListCell.swift; sourceTree = "<group>"; };
 		3E6E839527F5BE8500509C19 /* ShoppingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
 		3E6E839827F5FEC100509C19 /* WhiteHousePetitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteHousePetitionController.swift; sourceTree = "<group>"; };
 		3E6E839A27F602C000509C19 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
@@ -116,6 +118,10 @@
 		3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
 		3E898AA327C43B8B001F4494 /* EasyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBrowserViewController.swift; sourceTree = "<group>"; };
+		3E9346552804A0690006A133 /* InterestingPlacesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestingPlacesController.swift; sourceTree = "<group>"; };
+		3E9346572804A1040006A133 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		3E9346592804A3660006A133 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		3E93465D2804A8FA0006A133 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		3ED15B1327BDA02600847229 /* UIColor+StaticColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+StaticColors.swift"; sourceTree = "<group>"; };
 		3EE24E4F27FB788700A99EB6 /* HangmanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanController.swift; sourceTree = "<group>"; };
 		3EE24E5127FB7B3D00A99EB6 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 				3E6F245427F6C2ED00ED5EEE /* 7 Swifty Words */,
 				3EE24E4E27FB779A00A99EB6 /* Hangman */,
 				3E6EDB7527FEC96B0065E34B /* Names to Faces */,
+				3E93465428049FDD0006A133 /* Interesting Places */,
 				3E898AA027C3CFB2001F4494 /* Models */,
 				3E898AA127C3CFB9001F4494 /* Extensions and utilities */,
 				3E6DD00F27BAEFF8006736CB /* Main.storyboard */,
@@ -257,7 +264,6 @@
 			children = (
 				3E898A9927C3C85B001F4494 /* FlagListViewControllerTableViewController.swift */,
 				3E898A9B27C3CF81001F4494 /* FlagDetailViewController.swift */,
-				3E6E097E27D41DE900BF13EE /* FlagListCell.swift */,
 			);
 			path = "Flag List";
 			sourceTree = "<group>";
@@ -310,6 +316,17 @@
 				3E6B793927C4FBF800B872A1 /* WebsiteTableViewController.swift */,
 			);
 			path = Browser;
+			sourceTree = "<group>";
+		};
+		3E93465428049FDD0006A133 /* Interesting Places */ = {
+			isa = PBXGroup;
+			children = (
+				3E9346552804A0690006A133 /* InterestingPlacesController.swift */,
+				3E9346592804A3660006A133 /* PictureViewController.swift */,
+				3E93465D2804A8FA0006A133 /* PlaceCell.swift */,
+				3E9346572804A1040006A133 /* Place.swift */,
+			);
+			path = "Interesting Places";
 			sourceTree = "<group>";
 		};
 		3EE24E4E27FB779A00A99EB6 /* Hangman */ = {
@@ -414,6 +431,7 @@
 				3E6F245627F6C3B200ED5EEE /* SwiftyWordsController.swift in Sources */,
 				3E69650427F45C82002ABF3F /* AutoLayoutCodeController.swift in Sources */,
 				3E898AA427C43B8B001F4494 /* EasyBrowserViewController.swift in Sources */,
+				3E9346562804A0690006A133 /* InterestingPlacesController.swift in Sources */,
 				3E6AA90A27BBF2D900EF127E /* FlagGameViewController.swift in Sources */,
 				3E6AA90627BBE58800EF127E /* ProjectViewController.swift in Sources */,
 				3E6EDB9D27FF0FCC0065E34B /* Person.swift in Sources */,
@@ -423,7 +441,6 @@
 				3E6E83A127F6399400509C19 /* WhiteHousePetitionsTabBarController.swift in Sources */,
 				3E6F575E27FD8267001DA5F5 /* GuessCountController.swift in Sources */,
 				3EE24E5627FB852E00A99EB6 /* KeyCell.swift in Sources */,
-				3E6E097F27D41DE900BF13EE /* FlagListCell.swift in Sources */,
 				3EE24E5427FB7B5400A99EB6 /* BoardViewController.swift in Sources */,
 				3E6DD00E27BAEFF8006736CB /* StormViewerViewController.swift in Sources */,
 				3E6DD00A27BAEFF8006736CB /* AppDelegate.swift in Sources */,
@@ -433,17 +450,20 @@
 				3EE24E5827FB8F0400A99EB6 /* ImageViewController.swift in Sources */,
 				3EE24E5027FB788700A99EB6 /* HangmanController.swift in Sources */,
 				3E6EDBA42800429A0065E34B /* StormImageCell.swift in Sources */,
+				3E93465E2804A8FA0006A133 /* PlaceCell.swift in Sources */,
 				3E6DD03327BAFAD2006736CB /* DetailViewController.swift in Sources */,
 				3E6E839F27F6265100509C19 /* PetitionDetailViewController.swift in Sources */,
 				3E6AA90827BBED5C00EF127E /* Project.swift in Sources */,
 				3E6EDBA02800160B0065E34B /* StormViewerPresentationModeController.swift in Sources */,
 				3ED15B1427BDA02600847229 /* UIColor+StaticColors.swift in Sources */,
+				3E9346582804A1040006A133 /* Place.swift in Sources */,
 				3EE24E5227FB7B3D00A99EB6 /* KeyboardViewController.swift in Sources */,
 				3E6F245827F6D02100ED5EEE /* UseIpadController.swift in Sources */,
 				3E6EDB7727FEC9A10065E34B /* NamesToFacesControllerController.swift in Sources */,
 				3E898A9A27C3C85B001F4494 /* FlagListViewControllerTableViewController.swift in Sources */,
 				3E898A9C27C3CF81001F4494 /* FlagDetailViewController.swift in Sources */,
 				3E6B793E27C679E400B872A1 /* WordScrambleViewController.swift in Sources */,
+				3E93465A2804A3660006A133 /* PictureViewController.swift in Sources */,
 				3E6F576227FDFD61001DA5F5 /* EndGameViewController.swift in Sources */,
 				3E6EB03727C797A3003AF178 /* ErrorDescription.swift in Sources */,
 				3E6E839D27F61CCE00509C19 /* Petitions.swift in Sources */,

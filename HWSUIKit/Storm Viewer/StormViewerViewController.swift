@@ -42,7 +42,10 @@ class StormViewerViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        content.text = (pictures[indexPath.row] as NSString).deletingPathExtension
+        let filename = (pictures[indexPath.row] as NSString).deletingPathExtension
+        let defaults = UserDefaults.standard
+        let currentTaps = defaults.integer(forKey: pictures[indexPath.row])
+        content.text = "\(currentTaps) - \(filename)"
         let configuration = UIImage.SymbolConfiguration(paletteColors: [UIColor.backgroundRed!, UIColor.backgroundRed!.withAlphaComponent(0.5)])
         content.image = UIImage(systemName: "photo.fill", withConfiguration: configuration)
         cell.contentConfiguration = content
@@ -54,6 +57,10 @@ class StormViewerViewController: UITableViewController {
             vc.selectedImage = pictures[indexPath.row]
             vc.numberOfImages = pictures.count
             vc.numberOfCurrentImage = indexPath.row + 1
+            let defaults = UserDefaults.standard
+            let currentTaps = defaults.integer(forKey: pictures[indexPath.row])
+            defaults.set(currentTaps+1, forKey: pictures[indexPath.row])
+            tableView.reloadData()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

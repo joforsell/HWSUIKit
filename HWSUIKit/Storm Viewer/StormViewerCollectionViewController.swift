@@ -54,7 +54,10 @@ class StormViewerCollectionViewController: UICollectionViewController {
             fatalError("Unable to dequeue StormImageCell.")
         }
         let storm = pictures[indexPath.item]
-        cell.fileName.text = (storm as NSString).deletingPathExtension
+        let defaults = UserDefaults.standard
+        let currentTaps = defaults.integer(forKey: pictures[indexPath.row])
+        let filename = (storm as NSString).deletingPathExtension
+        cell.fileName.text = "\(currentTaps) - \(filename)"
         cell.imageView.image = UIImage(named: storm)
         return cell
     }
@@ -64,6 +67,10 @@ class StormViewerCollectionViewController: UICollectionViewController {
             vc.selectedImage = pictures[indexPath.item]
             vc.numberOfImages = pictures.count
             vc.numberOfCurrentImage = indexPath.item + 1
+            let defaults = UserDefaults.standard
+            let currentTaps = defaults.integer(forKey: pictures[indexPath.row])
+            defaults.set(currentTaps+1, forKey: pictures[indexPath.row])
+            collectionView.reloadData()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

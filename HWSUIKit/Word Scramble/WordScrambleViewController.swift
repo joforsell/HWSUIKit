@@ -19,7 +19,7 @@ class WordScrambleViewController: UITableViewController {
         
         setupWordCount()
         
-        navigationItem.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(startGame)), UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptForAnswer))]
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(newGame)), UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptForAnswer))]
 
         if let startWordURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
             if let startWords = try? String(contentsOf: startWordURL) {
@@ -47,9 +47,13 @@ class WordScrambleViewController: UITableViewController {
     }
     
     @objc
-    func startGame() {
-        title = allWords.randomElement()
+    func newGame() {
+        let newWord = allWords.randomElement()
+        title = newWord
+        let defaults = UserDefaults.standard
+        defaults.set(newWord, forKey: "word")
         if usedWords.count > recordScore {
+            defaults.set(usedWords.count, forKey: "highScore")
             recordScore = usedWords.count
             let ac = UIAlertController(title: "New record!", message: "You found \(usedWords.count) words, which is a new record. Good job!", preferredStyle: .alert)
             
@@ -59,8 +63,24 @@ class WordScrambleViewController: UITableViewController {
             present(ac, animated: true)
         }
         usedWords.removeAll(keepingCapacity: true)
+        defaults.set([String](), forKey: "usedWords")
         tableView.reloadData()
         wordCountLabel.text = "\(usedWords.count)"
+    }
+    
+    func startGame() {
+        let defaults = UserDefaults.standard
+        if let savedWord = defaults.string(forKey: "word") {
+            title = savedWord
+        } else {
+            let newWord = allWords.randomElement()
+            title = newWord
+            defaults.set(newWord, forKey: "word")
+        }
+        usedWords = defaults.object(forKey: "usedWords") as? [String] ?? [String]()
+        wordCountLabel.text = "\(usedWords.count)"
+        
+        recordScore = defaults.integer(forKey: "highScore")
     }
     
     @objc
@@ -90,6 +110,9 @@ class WordScrambleViewController: UITableViewController {
                 
                 let indexPath = IndexPath(row: 0, section: 0)
                 self?.tableView.insertRows(at: [indexPath], with: .automatic)
+                
+                let defaults = UserDefaults.standard
+                defaults.set(self?.usedWords, forKey: "usedWords")
                 
                 return
             case .failure(let errorDescription):

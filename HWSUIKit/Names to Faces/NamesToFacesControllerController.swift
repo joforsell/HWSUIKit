@@ -14,7 +14,26 @@ class NamesToFacesController: UICollectionViewController, UIImagePickerControlle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(addPersonWithCamera)), UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPerson))]
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(addPersonWithCamera)),
+                                              UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPerson))]
+        let defaults = UserDefaults.standard
+        
+        if let savedPeople = defaults.object(forKey: "people") as? Data {
+            let jsonDecoder = JSONDecoder()
+            
+            do {
+                people = try jsonDecoder.decode([Person].self, from: savedPeople)
+            } catch {
+                print("Could not load people")
+            }
+        }
+        
+//        <---- Obj-C compatible decoding ---->
+//        if let savedPeople = defaults.object(forKey: "people") as? Data {
+//            if let decodedPeople = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedPeople) as? [Person] {
+//                people = decodedPeople
+//            }
+//        }
     }
                                               
                                               
@@ -75,6 +94,7 @@ class NamesToFacesController: UICollectionViewController, UIImagePickerControlle
         
         let person = Person(name: "Unknown", image: imageName)
         people.append(person)
+        save()
         collectionView.reloadData()
         
         dismiss(animated: true )
@@ -94,13 +114,32 @@ class NamesToFacesController: UICollectionViewController, UIImagePickerControlle
         ac.addAction(UIAlertAction(title: "Rename", style: .default, handler: { [weak self, weak ac] _ in
             guard let newName = ac?.textFields?[0].text else { return }
             person.name = newName
+            self?.save()
             self?.collectionView.reloadData()
         }))
         ac.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [weak self] _ in
             self?.people.remove(at: indexPath.item)
+            self?.save()
             self?.collectionView.reloadData()
         }))
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(ac, animated: true)
+    }
+        
+    private func save() {
+        let jsonEncoder = JSONEncoder()
+        
+        if let savedData = try? jsonEncoder.encode(people) {
+            let defaults = UserDefaults.standard
+            defaults.set(savedData, forKey: "people")
+        } else {
+            print("Could not save people")
+        }
+        
+//        <---- Obj-C compatible encoding ---->
+//        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: people, requiringSecureCoding: false) {
+//            let defaults = UserDefaults.standard
+//            defaults.set(savedData, forKey: "people")
+//        }
     }
 }
