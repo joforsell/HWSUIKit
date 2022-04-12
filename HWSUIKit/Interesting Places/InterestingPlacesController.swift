@@ -14,7 +14,15 @@ class InterestingPlacesController: UITableViewController, UIImagePickerControlle
         super.viewDidLoad()
         
         let defaults = UserDefaults.standard
-        places = defaults.object(forKey: "places") as? [Place] ?? [Place]()
+        if let savedPlaces = defaults.object(forKey: "places") as? Data {
+            let jsonDecoder = JSONDecoder()
+            
+            do {
+                places = try jsonDecoder.decode([Place].self, from: savedPlaces)
+            } catch {
+                print("Could not load places")
+            }
+        }
 
         navigationItem.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(takePicture)), self.editButtonItem]
         
@@ -36,10 +44,12 @@ class InterestingPlacesController: UITableViewController, UIImagePickerControlle
                 let place = places[indexPath.row]
                 let ac = UIAlertController(title: "Rename place", message: nil, preferredStyle: .alert)
                 ac.addTextField()
+                ac.textFields?[0].text = place.name
                 
                 let renameAction = UIAlertAction(title: "Rename", style: .default) { [weak self, weak ac] _ in
                     guard let newName = ac?.textFields?[0].text else { return }
                     place.name = newName
+                    self?.save()
                     self?.tableView.reloadData()
                 }
                 let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
@@ -78,7 +88,7 @@ class InterestingPlacesController: UITableViewController, UIImagePickerControlle
             try? jpegData.write(to: imagePath)
         }
         
-        let place = Place(name: "Unknown", picture: imageName)
+        let place = Place(name: "New place", picture: imageName)
         places.append(place)
         save()
         tableView.reloadData()
