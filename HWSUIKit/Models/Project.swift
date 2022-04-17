@@ -45,7 +45,9 @@ struct Project {
         [Project(identifier: "Names to Faces", image: "face.smiling.fill"),
         Project(identifier: "Pachinko", image: "gamecontroller.fill")],
         
-        [Project(identifier: "Interesting Places", image: "photo.fill")]
+        [Project(identifier: "Interesting Places", image: "photo.fill")],
+        
+        [Project(identifier: "Instafilter", image: "photo.artframe")]
     ]
     
     static let sections = [
@@ -56,6 +58,7 @@ struct Project {
         "Projects 7-9",
         "Milestone Challenge 3",
         "Projects 10-12",
-        "Milestone Challenge 4"
+        "Milestone Challenge 4",
+        "Projects 13-15"
     ]
 }
